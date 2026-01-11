@@ -8,6 +8,7 @@ import { faBars, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 function App() {
   return (
     <>
+      {/* LANDING PAGE */}
       <div className="bg-[#f5f5f5] py-10 px-5">
         <div className="h-screen">
           {/* NAVIGATOR */}
@@ -26,7 +27,7 @@ function App() {
           </div>
 
           {/* HEADING */}
-          <div className="bg-red-600 text-white px-5 py-24 rounded-4xl border border-black/10 flex flex-col-reverse gap-20">
+          <div className="bg-black text-white px-5 py-24 rounded-4xl border border-black/10 flex flex-col-reverse gap-20">
             {/* side 1 */}
             <div className="">
               {/* heading */}
@@ -41,7 +42,6 @@ function App() {
               </div>
 
               {/* buttons */}
-              {/* buttons */}
               <div className="flex gap-3 flex-col mt-10 uppercase">
                 <div className="px-5 py-3 border border-black/10 rounded-4xl w-fit flex items-center gap-2 bg-white text-[#074F22]">
                   <FontAwesomeIcon icon={faInfoCircle} size="lg" />
@@ -52,7 +52,8 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-white p-5 mt-10 rounded-3xl">
+              {/* stats */}
+              <div className="bg-white p-5 mt-10 rounded-3xl text-black">
                 {/*  */}
                 <div className="flex">
                   <div className="w-10 h-10 bg-green-500 rounded-full"></div>
@@ -68,10 +69,20 @@ function App() {
 
             {/* side 2 */}
             <div className="">
-              <div className="mx-auto h-80 bg-green-200 rounded-4xl"></div>
+              <div className="mx-auto h-80 bg-white/10 rounded-4xl"></div>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* STATISTICS */}
+      <div className="py-14 px-5 bg-red-300">
+        <div className="">
+          <h2>89</h2>
+          <p>patients</p>
+        </div>
+        <div className=""></div>
+        <div className=""></div>
       </div>
 
       <br />
@@ -84,8 +95,21 @@ function App() {
       <br />
       <br />
       <br />
-
-      <div className="h-[70vh] bg-black"></div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }
