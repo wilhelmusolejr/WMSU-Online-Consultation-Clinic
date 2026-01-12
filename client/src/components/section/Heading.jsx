@@ -7,7 +7,7 @@ export default function Heading({ title, subtitle }) {
         {title}
       </h2>
       {/* border */}
-      <div className="w-4/12 mx-auto h-3 rounded-full bg-accent mt-10"></div>
+      <div className="max-w-25 mx-auto h-3 rounded-full bg-accent mt-10"></div>
     </div>
   );
 }
