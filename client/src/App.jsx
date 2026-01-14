@@ -19,17 +19,19 @@ function App() {
   return (
     <>
       {/* LANDING */}
-      <div className="bg-offwhite py-14 px-5 md:px-10">
-        <div className="h-screens">
+      <div className="bg-offwhite py-14">
+        <div className="h-screens w-10/12 mx-auto">
           {/* NAVIGATOR */}
-          <div className="p-5 mb-10 bg-white border border-black/50 rounded-full flex items-center justify-between">
+          <div className="p-3 mb-10 bg-white border border-black/50 rounded-full flex items-center justify-between">
             {/* LOGO */}
             <Logo />
 
             {/* NAV LINK */}
+
+            {/* BUTTON | BAR */}
             <div className="flex items-center gap-5">
               {/* BUTTON */}
-              <div className="rounded-full uppercase px-10 py-4 font-semibold bg-primary text-white">
+              <div className="rounded-full uppercase px-10 py-4 font-semibold bg-primary text-white hidden LG:block">
                 book appointment
               </div>
 
@@ -38,15 +40,15 @@ function App() {
                 <FontAwesomeIcon
                   icon={faBars}
                   className="text-primary"
-                  size="xl"
+                  size="2xl"
                 />
               </div>
             </div>
           </div>
 
           {/* HEADING */}
-          <div className="bg-primary text-white px-5 md:px-10 py-24 rounded-4xl border border-black/10">
-            <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-20 lg:gap-10">
+          <div className="bg-primary text-white py-24 rounded-4xl border border-black/10">
+            <div className="w-10/12 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-20 lg:gap-10">
               {/* side 1 */}
               <div className="">
                 {/* heading */}
@@ -98,7 +100,7 @@ function App() {
       </div>
 
       {/* STATISTICS */}
-      <div className="py-20 px-5 flex flex-row justify-center items-center text-center gap-4 lg:gap-10">
+      <div className="py-20 px-5 flex flex-row justify-center items-center text-center gap-5 lg:gap-10">
         {/* item */}
         <StatisticCard number={90} title={"patients"} />
 
@@ -114,8 +116,8 @@ function App() {
       </div>
 
       {/* FEATURES */}
-      <div className="py-40 px-5 md:px-10 bg-primary">
-        <div className="max-w-7xl mx-auto">
+      <div className="py-40 bg-primary">
+        <div className="max-w-7xl w-10/12 mx-auto">
           {/* heading */}
           <Heading title={"High quality care for over 23 years"} />
 
@@ -131,34 +133,36 @@ function App() {
       </div>
 
       {/* BANNER */}
-      <div className="px-5 md:px-10 py-30 text-white">
-        <div className="max-w-7xl mx-auto bg-primary border rounded-xl px-5 md:px-10 py-14 flex items-center flex-col-reverse md:flex-row gap-10">
-          {/* side 1 */}
-          <div className="w-8/12">
-            <h2 className="text-3xl font-semibold leading-relaxed capitalize">
-              Healthier treatments for our patients
-            </h2>
-            <p className="mt-5 font-light text-offwhite leading-relaxed text-sm max-w-prose">
-              Cheapangga majonders majubis ano shala ganders makyonget waz biway
-              mashumers ng dites juts at nang jongoloids jowabella sudems at
-              ang.
-            </p>
+      <div className="py-30 text-white">
+        <div className="max-w-7xl w-10/12 mx-auto bg-primary border rounded-xl py-14">
+          <div className="w-10/12 mx-auto flex items-center flex-col-reverse md:flex-row gap-10">
+            {/* side 1 */}
+            <div className="">
+              <h2 className="text-3xl font-semibold leading-relaxed capitalize">
+                Healthier treatments for our patients
+              </h2>
+              <p className="mt-5 font-light text-offwhite leading-relaxed text-sm max-w-prose">
+                Cheapangga majonders majubis ano shala ganders makyonget waz
+                biway mashumers ng dites juts at nang jongoloids jowabella
+                sudems at ang.
+              </p>
 
-            {/* btn */}
-            <div className="px-10 py-3 bg-accent text-primary text-xl uppercase font-semibold rounded-full w-fit mt-10">
-              see more
+              {/* btn */}
+              <div className="px-10 py-3 bg-accent text-primary text-xl uppercase font-semibold rounded-full w-fit mt-10">
+                see more
+              </div>
             </div>
-          </div>
-          {/* side 2 */}
-          <div className="flex-1">
-            <div className="w-full h-50 bg-gray-200 rounded-xl"></div>
+            {/* side 2 */}
+            <div className="w-full">
+              <div className="w-full h-50 bg-gray-200 rounded-xl"></div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* LIST DOCTORS */}
-      <div className="px-5 md:px-10 py-40 border border-black/10 bg-offwhite">
-        <div className="max-w-7xl mx-auto">
+      <div className="py-40 border border-black/10 bg-offwhite">
+        <div className="max-w-7xl w-10/12 mx-auto">
           {/* heading */}
           <div className="text-center">
             <h2 className="text-3xl font-semibold text-center uppercase">
@@ -177,7 +181,7 @@ function App() {
           </div>
 
           {/* parent */}
-          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-10">
             {/* item */}
             <DoctorCard img={""} name={"Dr. Jerome Estafo"} />
             <DoctorCard img={""} name={"Dr. Jerome Estafo"} />
