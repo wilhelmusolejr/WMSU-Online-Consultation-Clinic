@@ -27,15 +27,35 @@ function App() {
             <Logo />
 
             {/* NAV LINK */}
+            <ul className="hidden xl:flex items-center gap-5 uppercase font-semibold text-black ">
+              <li>
+                <a href="#">home</a>
+              </li>
+              <li>
+                <a href="#">services</a>
+              </li>
+              <li>
+                <a href="#">doctors</a>
+              </li>
+              <li>
+                <a href="#">tools</a>
+              </li>
+              <li>
+                <a href="#">about us</a>
+              </li>
+              <li>
+                <a href="#">contact us</a>
+              </li>
+            </ul>
 
             {/* BUTTON | BAR */}
             <div className="flex items-center gap-5">
               {/* BUTTON */}
-              <div className="rounded-full uppercase px-10 py-4 font-semibold bg-primary text-white hidden LG:block">
+              <div className="rounded-full uppercase px-10 py-4 font-semibold bg-primary text-white hidden sm:block">
                 book appointment
               </div>
 
-              <div className="lg:hidden">
+              <div className="xl:hidden">
                 {/* BAR */}
                 <FontAwesomeIcon
                   icon={faBars}
