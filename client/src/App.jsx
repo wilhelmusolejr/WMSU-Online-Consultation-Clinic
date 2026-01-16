@@ -20,7 +20,7 @@ function App() {
     <>
       {/* LANDING */}
       <div className="bg-offwhite py-14">
-        <div className="h-screens w-10/12 mx-auto">
+        <div className="h-screens w-10/12 md:w-11/12 mx-auto">
           {/* NAVIGATOR */}
           <div className="p-3 mb-10 bg-white border border-black/50 rounded-full flex items-center justify-between">
             {/* LOGO */}
@@ -47,8 +47,8 @@ function App() {
           </div>
 
           {/* HEADING */}
-          <div className="bg-primary text-white py-24 rounded-4xl border border-black/10">
-            <div className="w-10/12 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-20 lg:gap-10">
+          <div className="bg-primary text-white py-24 rounded-4xl">
+            <div className="w-10/12 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-20 lg:gap-10 ">
               {/* side 1 */}
               <div className="">
                 {/* heading */}
@@ -122,7 +122,7 @@ function App() {
           <Heading title={"High quality care for over 23 years"} />
 
           {/* parent */}
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-10/12 lg:w-full mx-auto">
             {/* item */}
             <FeatureCard />
             <FeatureCard />
@@ -153,8 +153,8 @@ function App() {
               </div>
             </div>
             {/* side 2 */}
-            <div className="w-full">
-              <div className="w-full h-50 bg-gray-200 rounded-xl"></div>
+            <div className="w-full lg:w-6/12">
+              <div className="w-full h-50 lg:h-75 bg-gray-200 rounded-xl"></div>
             </div>
           </div>
         </div>
@@ -181,7 +181,7 @@ function App() {
           </div>
 
           {/* parent */}
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-10">
+          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-10/12 lg:w-full mx-auto">
             {/* item */}
             <DoctorCard img={""} name={"Dr. Jerome Estafo"} />
             <DoctorCard img={""} name={"Dr. Jerome Estafo"} />
@@ -202,7 +202,7 @@ function App() {
       </div>
 
       {/* BANNER */}
-      <div className="py-30 md:px-10 bg-green-800 text-white">
+      <div className="py-30 md:py-30 md:px-10 bg-green-800 text-white">
         {/* heading */}
         <div className="text-center px-5 md:w-10/12 mx-auto">
           <h2 className="text-4xl font-semibold uppercase leading-relaxed">
@@ -222,9 +222,9 @@ function App() {
       </div>
 
       {/* FOOTER */}
-      <footer className="mt-40 bg-offwhite py-20 px-5 md:px-10">
-        <div className="border border-black/10 bg-white rounded-4xl p-5 md:px-10 pt-20">
-          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20">
+      <footer className="mt-40 bg-offwhite py-20 border-t border-black/20">
+        <div className="border max-w-7xl w-10/12 mx-auto border-black/20 bg-white rounded-4xl p-5 md:px-10 pt-20">
+          <div className="w-10/12 lg:w-full lg:px-10 mx-auto flex flex-col lg:flex-row gap-20">
             {/* side 1 */}
             <div className="w-full">
               {/* heading */}
@@ -248,7 +248,7 @@ function App() {
             </div>
 
             {/* side 2 */}
-            <div className="w-full flex justify-end">
+            <div className="w-full flex lg:justify-end">
               <ul className="flex gap-5 flex-col">
                 <li>
                   <a href="#" className="text-2xl font-bold">
@@ -284,7 +284,7 @@ function App() {
             </div>
           </div>
 
-          <div className="border-t border-black/10 mt-20">
+          <div className="border-t border-black/10 mt-20 text-center uppercase">
             <p className="my-10 max-w-7xl mx-auto">All right reserved</p>
           </div>
         </div>
