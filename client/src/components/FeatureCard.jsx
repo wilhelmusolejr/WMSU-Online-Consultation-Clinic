@@ -8,8 +8,8 @@ export default function FeatureCard() {
         <div className="w-30 h-30 rounded-lg border bg-offwhite border-black/20 mx-auto  "></div>
         {/* heading */}
         <div className="text-center mt-10">
-          <h3 className="text-2xl font-medium">100% free</h3>
-          <p className="mt-4 w-10/12 mx-auto text-sm font-light leading-relaxed">
+          <h3 className="text-2xl font-medium uppercase">100% free</h3>
+          <p className="mt-4 w-10/12 mx-auto text-sm font-light leading-relaxed capitalize">
             majonders majubis ano shala ganders makyonget
           </p>
         </div>
