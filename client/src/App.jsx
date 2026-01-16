@@ -14,6 +14,7 @@ import StatisticCard from "./components/StatisticCard";
 import DoctorCard from "./components/DoctorCard";
 import Logo from "./components/Logo";
 import SocialItem from "./components/footer/SocialItem";
+import Button from "./components/common/Button";
 
 function App() {
   return (
@@ -67,7 +68,7 @@ function App() {
           </div>
 
           {/* HEADING */}
-          <div className="bg-primary text-white py-24 rounded-4xl">
+          <div className="bg-primary text-white py-24 rounded-4xl ">
             <div className="w-10/12 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-20 lg:gap-10 ">
               {/* side 1 */}
               <div className="">
@@ -85,14 +86,12 @@ function App() {
                 {/* buttons */}
                 <div className="flex gap-3 flex-col mt-10 uppercase md:flex-row">
                   {/* btn 1 */}
-                  <div className="px-5 py-3 border border-black/10 rounded-4xl w-fit flex items-center gap-2 bg-white text-[#074F22]">
+                  <Button variant="tertiary" className="text-primary">
                     <FontAwesomeIcon icon={faInfoCircle} size="lg" />
                     <p className="font-medium">Learn more</p>
-                  </div>
+                  </Button>
                   {/* btn 2 */}
-                  <div className="px-5 py-3 border bg-accent text-primary font-bold border-black/10 rounded-4xl w-fit flex items-center gap-2 shadow-md">
-                    Book appointment
-                  </div>
+                  <Button variant="secondary">Book Appointment</Button>
                 </div>
 
                 {/* stats */}
@@ -158,19 +157,19 @@ function App() {
           <div className="w-10/12 mx-auto flex items-center flex-col-reverse md:flex-row gap-10">
             {/* side 1 */}
             <div className="">
-              <h2 className="text-3xl font-semibold leading-relaxed capitalize">
+              <h2 className="text-3xl font-bold leading-relaxed capitalize">
                 Healthier treatments for our patients
               </h2>
-              <p className="mt-5 font-light text-offwhite leading-relaxed text-sm max-w-prose">
+              <p className="mt-2 font-light text-offwhite leading-relaxed text-sm max-w-prose">
                 Cheapangga majonders majubis ano shala ganders makyonget waz
                 biway mashumers ng dites juts at nang jongoloids jowabella
                 sudems at ang.
               </p>
 
               {/* btn */}
-              <div className="px-10 py-3 bg-accent text-primary text-xl uppercase font-semibold rounded-full w-fit mt-10">
+              <Button variant="secondary" className="uppercase mt-10">
                 see more
-              </div>
+              </Button>
             </div>
             {/* side 2 */}
             <div className="w-full lg:w-6/12">
@@ -215,9 +214,9 @@ function App() {
           </div>
 
           {/* btn */}
-          <div className="px-10 py-3 bg-accent text-primary uppercase font-semibold rounded-full w-fit mt-20 mx-auto">
-            see more
-          </div>
+          <Button variant="primary" className="mt-20 mx-auto">
+            See more
+          </Button>
         </div>
       </div>
 
