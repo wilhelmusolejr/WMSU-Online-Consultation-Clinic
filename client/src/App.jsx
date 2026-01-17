@@ -200,6 +200,7 @@ function App() {
           </div>
 
           {/* parent */}
+          {/* parent */}
           <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-10/12 lg:w-full mx-auto">
             {/* item */}
             <DoctorCard img={""} name={"Dr. Jerome Estafo"} />
